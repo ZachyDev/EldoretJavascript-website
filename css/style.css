@@ -65,6 +65,7 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 /* line 13, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/theme-default.scss */
@@ -1242,7 +1243,7 @@ h3 {
 
 /* line 4, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url(../img/banner/banner2.png);
+  background-image: url(../img/dev5.jpg);
 }
 
 /* line 8, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_slider.scss */
