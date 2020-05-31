@@ -1,0 +1,35 @@
+.our-info-area{
+    background: #f9f9f9;
+    .single-info{
+        display: flex;
+        align-items: center;
+       .info-icon{
+        span{
+            color: #f15f22;
+            font-size: 44px;
+            margin-bottom: 0;
+            display: block;
+        }
+       }
+       .info-caption{
+        padding-left: 20px;
+           p{
+            color: #677294;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 0;
+           }
+           span{
+            color: #2c234d;
+            font-size: 20px;
+            margin-bottom: 0px;
+            display: block;
+            font-weight: 600;
+            @media #{$sm}{
+                font-size: 16px;
+            }            
+           }
+       }
+    }
+}
+

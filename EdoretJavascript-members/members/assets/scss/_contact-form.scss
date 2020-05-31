@@ -1,0 +1,173 @@
+
+.contact-form-area {
+    .contact-form-wrapper{
+        background: #f5f5f5;
+        padding: 80px;
+        border-radius: 8px;
+        @media #{$xs}{
+            padding: 20px;;
+        }
+        @media #{$sm}{
+            padding: 30px;;
+        }
+     // Form Style Slider
+        form.contact-form{
+            input{
+                height: 60px;
+                width: 100%;
+                color: #777777;
+                font-size: 18px;
+                font-weight: 400;
+                padding: 9px 33px 9px 32px;
+                border-radius: 5px;
+                border: 1px solid #efebeb;
+                background: #fff;
+                margin-bottom: 20px;
+                @media #{$xs}{
+                    margin-bottom: 20px;
+                }
+                @media #{$sm}{
+                    padding: 9px 33px 9px 25px;
+                    margin-bottom: 20px;
+                }
+                &::placeholder {
+                    color: #616875;
+                    @media #{$xs}{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .nice-select {
+                width: 100%;
+                height: 60px;
+                background: #fff;
+                padding: 11px 19px 11px 31px;
+                line-height: 42px;
+                border-radius: 5px;
+                border: 1px solid #efebeb;
+                background: #fff;
+                color: #a6abb0;
+                font-size: 17px;
+                margin-bottom: 20px;
+                @media #{$xs}{
+                    margin-bottom: 20px;
+                    padding-left: 25px;
+                }
+                @media #{$sm}{
+                    margin-bottom: 20px;
+                    padding-left: 25px;
+                }
+            .list {
+                    width: 100%;
+                }
+                &.open .list {
+                    width: 100%;
+                    border-radius: 0;
+                    border: 0;
+                }
+                &::after {
+                    border-bottom: 1px solid #a9b6cd;
+                    border-right: 1px solid #a9b6cd;
+                    height: 12px;
+                    width: 12px;
+                    margin-top: -7px;
+                    right: 29px;
+                }
+            }
+            // Radio Start
+            .radio-wrapper{
+               & > label {
+                    position: relative;
+                    bottom: -8px;
+                    color: #2c234d;
+                    font-weight: 700;
+                }
+                display: flex;
+                @media #{$md}{
+                   display: block;
+                }
+                @media #{$lg}{
+                   display: block;
+                }
+                @media #{$sm}{
+                   display: block;
+                }
+                @media #{$xs}{
+                   display: block;
+                }
+                .select-radio{
+                    .radio {
+                        margin: 0.5rem;
+                        display: inline-block;
+                        label{
+                            cursor: pointer;
+                            margin-left: -2px;
+                            font-size: 14px;
+                            color: #677294;
+                            @media #{$lg}{
+                                font-size: 15px;
+                            }
+                            
+                        }
+                        input[type="radio"] {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            + .radio-label {
+                            &:before {
+                                content: '';
+                                background: $radio-color1;
+                                border-radius: 100%;
+                                border: 1px solid darken($radio-color1, 25%);
+                                display: inline-block;
+                                width: 1.4em;
+                                height: 1.4em;
+                                position: relative;
+                                top: 3px;
+                                margin-right: 17px;; 
+                                vertical-align: top;
+                                cursor: pointer;
+                                text-align: center;
+                                transition: all 250ms ease;
+                            }
+                            }
+                            &:checked {
+                            + .radio-label {
+                                &:before {
+                                background-color:  $radio-color2;
+                                box-shadow: inset 0 0 0 4px $radio-color1;
+                                }
+                            }
+                            }
+                            &:focus {
+                            + .radio-label {
+                                &:before {
+                                outline: none;
+                                border-color:  $radio-color2;
+                                }
+                            }
+                            }
+                            &:disabled {
+                            + .radio-label {
+                                &:before {
+                                box-shadow: inset 0 0 0 4px $radio-color1;
+                                border-color: darken($radio-color1, 25%);
+                                background: darken($radio-color1, 25%);
+                                }
+                            }
+                            }
+                            + .radio-label {
+                            &:empty {
+                                &:before {
+                                margin-right: 0;
+                                }
+                            }
+                            }
+                        }
+                        }
+                }
+                // End Radio
+            }
+        }
+    }
+}
